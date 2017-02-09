@@ -12,6 +12,8 @@ class CocktailsController < ApplicationController
   end
 
   def create
+    cocktail = Cocktail.create(cocktail_params)
+    redirect_to cocktail_path(cocktail)
   end
 
   def edit

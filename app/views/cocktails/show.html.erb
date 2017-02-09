@@ -1,2 +1,16 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<div class="container">
+  <div class="row">
+  <h1 class="text-center"><%= @cocktail.name %></h1>
+    <div class="col-md-4 col-md-offset-2">
+      <h2><%= @cocktail.description %></h2>
+      <h4>Rating : <%= @cocktail.rating.times do %>
+      <i class="fa fa-star"></i>
+      <% end %>
+      </h4>
+      <p><%= link_to "Back", cocktails_path %></p>
+      <p><%= link_to "Edit Cocktail", edit_cocktail_path %></p>
+      <p><%= link_to "Delete Cocktail", cocktail_path,  method: :delete %></p>
+    </div>
+  </div>
+</div>
+

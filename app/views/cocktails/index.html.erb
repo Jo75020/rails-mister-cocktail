@@ -1,21 +1,14 @@
-<div class="container">
-  <div class="row">
-  <h1 class="text-center"> Liste des Cocktails </h1>
-    <div class="col-md-4 col-md-offset-2">
-  <ol>
-    <% @cocktails.each do |cocktail| %>
-    <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
-    <h3>Description : <%= cocktail.description %></h3>
-    <h4>Rating : <% cocktail.rating.times do %>
-    <i class="fa fa-star"></i>
-    <% end %>
-    </h4>
-    <% end %>
-  </ol>
-    </div>
-  </div>
+<h1 class="text-center">Welcome to Mister Cocktail!</h1>
+
+<div class="text-center padded">Pick Add or Edit an awesome Cocktail!
 </div>
 
-
-
-
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-4">
+      <%= render "card", cocktail: cocktail %>
+      </div>
+    <% end %>
+  </div>
+</div>

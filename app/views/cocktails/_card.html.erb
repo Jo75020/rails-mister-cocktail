@@ -1,0 +1,10 @@
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path cocktail.picture%>);">
+<div class="card-category"></div>
+  <div class="card-description">
+  <h2><%= cocktail.name %></h2>
+    <% cocktail.doses.each do |d|  %>
+      <p><%= d.description %> of <%= d.ingredient.name %></p>
+    <% end %>
+  </div>
+  <%= link_to "", cocktail_path(cocktail), class:"card-link" %>
+</div>

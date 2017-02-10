@@ -1,9 +1,7 @@
-<h1 class="text-center">Welcome to Mister Cocktail!</h1>
 
-<div class="text-center padded">Pick Add or Edit an awesome Cocktail!
-</div>
-
+<%= render "banner" %>
 <div class="container">
+<div class="padded text-center">What do you want to drink?</div>
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-4">

@@ -6,8 +6,8 @@
 
 // Paddings
 .padded {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   font-size: 26px;
 }
 
@@ -23,4 +23,18 @@
 }
 .bg-dark-blue {
   background: #3b5998;
+}
+
+#form_styled {
+  background-color: white;
+  margin-top: 30px;
+  padding: 25px;
+  -moz-box-shadow: 1px 1px 5px 3px #656565;
+  -webkit-box-shadow: 1px 1px 5px 3px #656565;
+  -o-box-shadow: 1px 1px 5px 3px #656565;
+  box-shadow: 1px 1px 5px 3px #656565;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }

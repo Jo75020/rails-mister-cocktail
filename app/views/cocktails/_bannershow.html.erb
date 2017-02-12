@@ -12,7 +12,7 @@
         <% end %>
       </ul>
       <%= simple_form_for [ @cocktail, @dose ] do |f| %>
-        <%= f.input :description, input_html: { placeholder: "5cl" }  %>
+        <%= f.input :description, input_html: { placeholder: "5cl", :maxlength => 15, :size => 40 } %>
         <%= f.association :ingredient, prompt: "Select an ingredient" %>
         <%= f.button :submit %>
       <% end %>

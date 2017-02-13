@@ -46,7 +46,6 @@ gem 'figaro'
 
 
 gem "json"
-gem 'open-uri'
 gem "rest-client"
 
 group :development, :test do

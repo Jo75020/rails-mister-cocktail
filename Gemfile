@@ -45,9 +45,9 @@ gem 'figaro'
 
 
 
-require "json"
-require 'open-uri'
-require "rest-client"
+gem "json"
+gem 'open-uri'
+gem "rest-client"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
